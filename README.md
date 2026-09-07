@@ -1,4 +1,12 @@
-# Tuya Vacuum Maps
+# Tuya Vacuum Maps Alternative
+
+> **Este é um fork mantido de [jaidenlabelle/tuya-vacuum-maps](https://github.com/jaidenlabelle/tuya-vacuum-maps).**
+> O mantenedor original não está fazendo merge de Pull Requests há vários
+> meses. Este fork usa o domain `tuya_vacuum_maps_alternative` (diferente
+> do original), então pode ser instalado lado a lado com a integração
+> original sem conflito — mas quem migra do original precisa reconfigurar
+> a integração do zero. A lib de decodificação de mapa também é um fork
+> mantido: [porklabz/tuya-vacuum-alternative](https://github.com/porklabz/tuya-vacuum-alternative).
 
 🏠 View Real-Time Vacuum Maps In Home Assistant.<br>
 This component adds a new camera which polls the Tuya Cloud API for the latest realtime map data.<br>
@@ -26,13 +34,13 @@ To install this integration manually, add the contents of `custom_components` to
 ### Installing using HACS
 
 1. [Install HACS](https://www.hacs.xyz/docs/use/) if its not already installed.
-1. Add this repository to HACS by following this guide: [HACS: Add Custom Repository](https://www.hacs.xyz/docs/faq/custom_repositories/).
-3. Search for this integration using the HACS browser inside Home Assistant, and install.
+1. Add this repository (`porklabz/tuya-vacuum-maps`) to HACS by following this guide: [HACS: Add Custom Repository](https://www.hacs.xyz/docs/faq/custom_repositories/).
+3. Search for "Tuya Vacuum Maps Alternative" using the HACS browser inside Home Assistant, and install.
 
 ## Compatibility List
 
 This is a list of tested devices.
-Create a new [issue](https://github.com/jaidenlab/tuya-vacuum-maps/issues) to add your device.
+Create a new [issue](https://github.com/porklabz/tuya-vacuum-maps/issues) to add your device.
 
 | Device                                                | Support                           |
 | ----------------------------------------------------- | --------------------------------- |
@@ -57,7 +65,7 @@ It's recommended to set up a development environment if you want to make changes
 2. Go to the folder containing the `homeassistant-core` folder, it should be called `workspaces`.
 3. Once your fork is created, make sure your terminal path is set to `/workspaces` and run `git clone <url>`.
 4. To make testing easier, create a symlink to the component in your Home Assistant devcontainer.
-   - Example: `ln -s /workspaces/tuya-vacuum-maps/custom_components/tuya_vacuum_maps /workspaces/homeassistant-core/config/custom_components`
+   - Example: `ln -s /workspaces/tuya-vacuum-maps/custom_components/tuya_vacuum_maps_alternative /workspaces/homeassistant-core/config/custom_components`
 5. For development, it's recommended you use a virtual environment.
    1. Create a new virtual environment (Run in the root `/tuya-vacuum-maps` folder):
       - `python -m venv venv`
@@ -66,4 +74,5 @@ It's recommended to set up a development environment if you want to make changes
 
 ## Special Thanks
 
+- [Jaiden Labelle](https://github.com/jaidenlabelle) for the original `tuya-vacuum-maps` integration
 - [Tuya Cloud Vacuum Map Extractor](https://github.com/oven-lab/tuya_cloud_map_extractor) by [@oven-lab](https://github.com/oven-lab)

@@ -1,6 +1,6 @@
 """This module defines global constants"""
 
-DOMAIN = "tuya_vacuum_maps"
+DOMAIN = "tuya_vacuum_maps_alternative"
 
 CONF_SERVER = "server"
 

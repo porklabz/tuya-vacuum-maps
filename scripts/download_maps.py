@@ -4,7 +4,7 @@ import os
 
 import requests
 from dotenv import load_dotenv
-from custom_components.tuya_vacuum_maps.tuya import TuyaCloudAPI
+from custom_components.tuya_vacuum_maps_alternative.tuya import TuyaCloudAPI
 
 # Load environment variables
 load_dotenv()

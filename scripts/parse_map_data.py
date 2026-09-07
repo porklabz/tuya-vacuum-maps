@@ -2,7 +2,7 @@
 
 import logging
 
-from custom_components.tuya_vacuum_maps.vacuum_map import VacuumMap
+from custom_components.tuya_vacuum_maps_alternative.vacuum_map import VacuumMap
 
 
 logging.basicConfig(level=logging.DEBUG)
